@@ -8,7 +8,6 @@ public:
             if (l != r) return false; 
             if (s[i] != s[i-1]) l = 1; else l = 0;
             if (t[i] != t[i-1]) r = 1; else r = 0;
-            // to check each pair is the same 
             if (t[s.find(s[i])] != t[i]) return false;
             if (s[t.find(t[i])] != s[i]) return false;
         }
