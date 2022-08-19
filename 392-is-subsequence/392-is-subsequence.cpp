@@ -5,7 +5,6 @@ public:
         if (t.empty()) return false; 
         if (t.find(s[0]) == string::npos) return false;
         int index = t.find(s[0]); 
-        // int count = 1;
         t.erase(0, index+1);
         for (int i = 1; i < s.size(); i++)
         {
