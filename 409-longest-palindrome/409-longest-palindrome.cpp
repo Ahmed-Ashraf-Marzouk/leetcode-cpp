@@ -3,7 +3,6 @@ public:
     int longestPalindrome(string s) {
         int f_l[26] = {0};
         int f_u[26] = {0};
-        
         for (int i = 0; i < s.size(); i++)
         {
             if(isupper(s[i]))
@@ -25,12 +24,6 @@ public:
             if (f_u[i] %2 != 0 || f_l[i] %2 != 0) b_odd = 1;
 
         }
-        
-  
-        return sum + b_odd;
-        
+        return sum + b_odd;   
     }
-  
 };
-
-// if even number of letter with 1/0 odd number of a  one letter ! 
