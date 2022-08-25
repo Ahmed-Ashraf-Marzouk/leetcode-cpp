@@ -13,21 +13,7 @@ public:
             else f_l[s[i] - 'a']++;
         }
         int b_odd = 0;
-        int sum = 0;
-        int f = 0;
-        // for (int i = 0; i < 26; i++)
-        // {
-        //     if(f_u[i] % 2 != 0)
-        //     {
-        //         if(f_u[i] > b_odd)
-        //             b_odd = f_u[i];
-        //     }
-        //     if(f_l[i] % 2 != 0)
-        //     {
-        //         if(f_l[i] > b_odd)
-        //             b_odd = f_l[i];
-        //     }
-        // }
+        int sum = 0;    
         for (int i = 0; i < 26; i++)
         {
             if (f_l[i] != 1)
