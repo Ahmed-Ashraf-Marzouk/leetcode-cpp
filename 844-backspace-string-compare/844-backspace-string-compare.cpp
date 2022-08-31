@@ -21,19 +21,17 @@ public:
                 stk_t.push(t[i]);
             i++;
         }
-        if(stk_s.size() != stk_t.size()){cout <<stk_s.size() << stk_t.size(); return false;}
+        if(stk_s.size() != stk_t.size()) return false;
         while(!stk_s.empty())
         {
             if(stk_s.top() == stk_t.top())
             {
                 stk_s.pop(); stk_t.pop();
             }
-            else
-            {
+            else 
                 return false;
-                cout << "JEE:";    
-            }
+         
         }
-        if(stk_t.empty()) return true; cout <<"SDA"; return false ;
+        if(stk_t.empty()) return true; return false ;
     }
 };
